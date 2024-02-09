@@ -1,14 +1,13 @@
 #!/bin/sh
-
 curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
 unzip rclone-current-linux-amd64.zip
 cp rclone-*-linux-amd64/rclone .
 rm -rf rclone-*
 chmod +x rclone
 
-curl -s $CONF
+curl -sLO $CONF
 
-rclone serve http combine: \
+./rclone serve http combine: \
     --config=rclone.conf \
     --read-only \
     --addr=:$PORT \
