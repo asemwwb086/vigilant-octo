@@ -1,1 +1,1 @@
-web: ./warish.sh
+web: sh warish.sh
