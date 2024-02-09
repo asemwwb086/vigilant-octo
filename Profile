@@ -1,0 +1,1 @@
+web: ./warish.sh
